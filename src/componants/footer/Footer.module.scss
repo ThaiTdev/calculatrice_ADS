@@ -1,0 +1,8 @@
+.container {
+  width: 100%;
+  background-color: var(--gray-1);
+  color: var(--gray-2);
+  @media screen and (max-width: 500px) {
+    text-align: center;
+  }
+}

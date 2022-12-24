@@ -1,0 +1,22 @@
+.button {
+  transition: 0.8s all;
+  &:hover {
+    border: 2px solid var(--green);
+    color: var(--green);
+    background-color: white;
+  }
+}
+select {
+  margin-bottom: 20px;
+  border: 1px solid var(--primary);
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+input {
+  margin-bottom: 20px;
+  border: 1px solid var(--primary);
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}

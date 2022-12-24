@@ -1,0 +1,23 @@
+@use "../../assets/styles/mixins" as mixin;
+
+.headerMenu {
+  display: none;
+  position: absolute;
+  top: 68px;
+  right: 10px;
+  width: 200px;
+
+  @include mixin.xs {
+    display: block;
+  }
+  li {
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-align: center;
+    transition: background-color 0.2s, color 0.2s;
+    &:hover {
+      background-color: var(--primary);
+      color: white;
+    }
+  }
+}

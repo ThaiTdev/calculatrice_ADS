@@ -1,0 +1,26 @@
+@use "../../assets/styles/mixins" as mixin;
+
+.header {
+  position: relative;
+  padding: 10px 20px;
+  box-shadow: var(--box-shadow-nav);
+  color: var(--primary);
+  background-color: white;
+  height: 58px;
+  img {
+    width: 30px;
+  }
+}
+
+.HeaderNav {
+  @include mixin.xs {
+    display: none;
+  }
+}
+.menuBar {
+  cursor: pointer;
+  display: none;
+  @include mixin.xs {
+    display: block;
+  }
+}
